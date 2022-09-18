@@ -1,4 +1,12 @@
-﻿
+﻿string[] firstArray = new string[5] {"Oslo", "Quebec", "Seoul", "Mockow", "Dubai"};
+string[] secondArray = new string[3];
+
+CreateSecondArray(firstArray, secondArray);
+PrintArray(firstArray);
+Console.WriteLine();
+PrintArray(secondArray);
+
+
 void CreateSecondArray(string[] fArray, string[] sArray)
 {
     int count = 0;
@@ -20,10 +28,3 @@ void PrintArray(string[] array)
         else Console.Write(array[i] + "]");
     }
 }
-string[] firstArray = new string[5] {"Oslo", "Quebec", "Seoul", "Mockow", "Dubai"};
-string[] secondArray = new string[3];
-
-CreateSecondArray(firstArray, secondArray);
-PrintArray(firstArray);
-Console.WriteLine();
-PrintArray(secondArray);
